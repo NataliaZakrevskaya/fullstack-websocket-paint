@@ -15,7 +15,11 @@ const SettingBar = () => {
         min={1}
         max={50}/>
       <label htmlFor="stroke-color">Stroke color</label>
-      <input onChange={e => toolState.setStrokeColor(e.target.value)} id={"stroke-color"} type="color"/>
+      <input
+        style={{margin: '0 10px'}}
+        onChange={e => toolState.setStrokeColor(e.target.value)}
+        id={"stroke-color"}
+        type="color"/>
     </div>
   );
 };
